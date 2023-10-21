@@ -11,7 +11,7 @@ import Form from 'react-bootstrap/Form';
 import axios from 'axios'
 import { toast } from 'react-toastify';
 import { API } from './global';
-
+import { Link } from 'react-router-dom';
 function Dashboard() {
     let nav = useNavigate()
 
@@ -51,7 +51,7 @@ function Dashboard() {
                             <a href='https://help.pinterest.com/en/guide/all-about-pinterest' target='blank' className='navlink' style={{ "color": "black", "paddingRight": "1rem", "fontWeight": "500", "textDecoration": "none", "padding": "0.5rem", "margin": "0.5rem", "display": "inline" }} >About</a>
                             <a href='https://business.pinterest.com/en-in/' target='blank' className='navlink' style={{ "color": "black", "paddingRight": "1rem", "fontWeight": "500", "textDecoration": "none", "padding": "0.5rem", "margin": "0.5rem", "display": "inline" }} >Business</a>
                             <a href='https://newsroom.pinterest.com/en' target='blank' className='navlink' style={{ "color": "black", "paddingRight": "1rem", "fontWeight": "500", "textDecoration": "none", "padding": "0.5rem", "margin": "0.5rem", "display": "inline" }} >Blog</a>
-                            <a href='/login' style={{ "color": "black", "backgroundColor": "red", "textDecoration": "none", "borderRadius": "50px", "fontWeight": "500", "padding": "0.5rem", "margin": "0.5rem", "display": "inline" }} >Log-in</a>
+                            <Link to='/login' style={{ "color": "black", "backgroundColor": "red", "textDecoration": "none", "borderRadius": "50px", "fontWeight": "500", "padding": "0.5rem", "margin": "0.5rem", "display": "inline" }} >Log-in</Link>
                             <a href='#signup-card' style={{ "color": "black", "backgroundColor": "whitesmoke", "textDecoration": "none", "borderRadius": "50px", "fontWeight": "500", "padding": "0.5rem", "margin": "0.5rem", "display": "inline" }} >Sign-up</a>
                         </Nav>
                     </Container>
